@@ -4,10 +4,84 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@500&f[]=general-sans@500,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>testing</h1>
+    <!-- Header Section -->
+    <header class="header">
+      <!-- Header Left Side -->
+      <div class="header_left">
+        <!-- Navigation -->
+        <nav class="main_nav">
+          <a href="#" class="logo">
+            <img src="./images/Logo.jpg" alt="logo image" />
+          </a>
+          <ul class="nav">
+            <li class="nav_link">
+              <a href="#">Home</a>
+            </li>
+            <div class="seperator"></div>
+            <li class="nav_link">
+              <a href="#">About</a>
+            </li>
+            <div class="seperator"></div>
+
+            <li class="nav_link">
+              <a href="#">Store</a>
+            </li>
+            <div class="seperator"></div>
+
+            <li class="nav_link">
+              <a href="#">Contact US</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- End of Navigation -->
+
+        <!-- Header Info -->
+        <div class="header_info">
+          <h1 class="header_title">
+            Expand your mind, reading a <span>book</span>
+          </h1>
+          <p class="header_text">
+            Reading books is a wonderful way to spend your time. Here at we
+            believe reading will help you make connections with others.
+          </p>
+          <div class="header_buttons">
+            <a href="#" class="button button_accent">Download Now</a>
+            <a href="#" class="button button_border">Read Free Book</a>
+          </div>
+        </div>
+        <!-- End of Header Info -->
+      </div>
+      <!-- End of Header Left Side -->
+
+      <!-- Header Right Side -->
+      <div class="header_right">
+        <a href="#" class="buy_button button">
+          <svg
+            width="16"
+            height="20"
+            class="lock"
+            viewBox="0 0 16 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.00003 20C6.54785 19.9997 5.09666 19.9234 3.6522 19.7715L2.99717 19.7027C2.33259 19.6331 1.70985 19.3403 1.22754 18.8706C0.745233 18.401 0.430904 17.7813 0.334317 17.1098C-0.111114 14.0266 -0.111114 10.8938 0.334317 7.81063L0.562383 6.23116C0.596131 6.00533 0.708156 5.79917 0.878276 5.64982C1.0484 5.50047 1.26543 5.41775 1.49027 5.41656H3.05236V5.02513C3.05236 3.69238 3.57352 2.41422 4.50119 1.47183C5.42887 0.529431 6.68706 0 7.99899 0C9.31092 0 10.5691 0.529431 11.4968 1.47183C12.4245 2.41422 12.9456 3.69238 12.9456 5.02513V5.41656H14.5077C14.7325 5.41775 14.9496 5.50047 15.1197 5.64982C15.2898 5.79917 15.4018 6.00533 15.4356 6.23116L15.6637 7.80957C16.1091 10.8928 16.1091 14.0255 15.6637 17.1087C15.5673 17.7805 15.253 18.4004 14.7707 18.8702C14.2884 19.3401 13.6655 19.6331 13.0008 19.7027L12.3458 19.7715C10.902 19.9234 9.45151 19.9996 8.00003 20ZM12.1656 6.20894C11.9584 6.20894 11.7596 6.2925 11.613 6.44127C11.4663 6.59004 11.3838 6.79185 11.3835 7.00238V9.11822C11.3835 9.32866 11.4658 9.53047 11.6123 9.67927C11.7588 9.82807 11.9574 9.91166 12.1646 9.91166C12.3717 9.91166 12.5704 9.82807 12.7169 9.67927C12.8633 9.53047 12.9456 9.32866 12.9456 9.11822V7.00238C12.9451 6.7924 12.8627 6.59118 12.7165 6.4427C12.5704 6.29422 12.3723 6.21056 12.1656 6.21V6.20894ZM3.83445 6.20894C3.6272 6.20894 3.42844 6.2925 3.2818 6.44127C3.13516 6.59004 3.05264 6.79185 3.05236 7.00238V9.11822C3.05236 9.32866 3.13465 9.53047 3.28112 9.67927C3.4276 9.82807 3.62626 9.91166 3.83341 9.91166C4.04055 9.91166 4.23921 9.82807 4.38569 9.67927C4.53216 9.53047 4.61445 9.32866 4.61445 9.11822V7.00238C4.6139 6.7924 4.53155 6.59118 4.38539 6.4427C4.23923 6.29422 4.04115 6.21056 3.83445 6.21V6.20894ZM8.00003 1.58582C7.55549 1.58555 7.11525 1.67429 6.7045 1.84698C6.29375 2.01967 5.92053 2.27292 5.60619 2.59224C5.29185 2.91157 5.04256 3.29071 4.87257 3.70798C4.70258 4.12525 4.61522 4.57247 4.61549 5.02407V5.4155H11.3846V5.02513C11.3848 4.57353 11.2975 4.12631 11.1275 3.70904C10.9575 3.29177 10.7082 2.91263 10.3939 2.5933C10.0795 2.27397 9.70631 2.02073 9.29556 1.84804C8.8848 1.67535 8.44457 1.5866 8.00003 1.58688V1.58582Z"
+            />
+          </svg>
+          Buy Book</a
+        >
+        <img src="./images/credit-score.jpg" alt="" class="header_banner" />
+      </div>
+      <!-- End of Header Right Side -->
+    </header>
+    <!-- End of Header Section -->
   </body>
 </html>
