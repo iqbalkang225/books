@@ -98,7 +98,7 @@ h1 {
 
 h2 {
   font-size: 38px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 /* ==============
@@ -214,6 +214,7 @@ Trusted By Section
 
 .trusted_title {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .trusted_partners {
@@ -278,4 +279,45 @@ Author Section
   margin-bottom: 20px;
   padding-bottom: 30px;
   border-bottom: 0.1px solid var(--clr-secondary);
+}
+
+/* ==============
+Order Section
+================= */
+
+#order {
+  background: var(--clr-accent);
+  padding: 50px 0;
+}
+
+.order {
+  display: flex;
+  align-items: center;
+}
+
+.order_info {
+  width: 45%;
+  color: var(--clr-white);
+}
+
+.order_title {
+  color: var(--clr-white);
+}
+
+.order_text {
+  margin-bottom: 30px;
+}
+
+.order_link {
+  color: var(--clr-white);
+  text-decoration: underline;
+}
+
+.order_arrow {
+  margin-left: 5px;
+  transition: var(--transition);
+}
+
+.order_link:hover ~ .order_arrow {
+  margin-left: 10px;
 }
